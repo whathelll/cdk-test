@@ -1,5 +1,5 @@
-{
-  "compilerOptions": {
+{  
+    "compilerOptions": {
     "target":"ES2018",
     "module": "commonjs",
     "lib": ["es2018"],
@@ -18,9 +18,5 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization":false,
     "typeRoots": ["./node_modules/@types"]
-  },
-  "exclude": [
-    "cdk.out",
-    "web-app"
-  ]
+  }
 }
