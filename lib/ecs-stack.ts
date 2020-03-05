@@ -106,7 +106,7 @@ export class EcsStack extends cdk.Stack {
         const taskDefinition = new ecs.Ec2TaskDefinition(this, 'WebAppTaskDef');
         
         const webappContainer = taskDefinition.addContainer('webapp', {
-          image: ecs.ContainerImage.fromAsset("../web-app"),
+          image: ecs.ContainerImage.fromAsset("../cdk-web-app"),
           memoryLimitMiB: 256,
           environment: {
             REDIS_HOST: redisCluster.cluster.attrRedisEndpointAddress,
